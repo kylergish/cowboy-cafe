@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: RustlersRibs.cs
+ * Purpose: A class representing the Rustler's Rib entree
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: BakedBeans.cs
+ * Purpose: A class representing the Baked Beans side
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

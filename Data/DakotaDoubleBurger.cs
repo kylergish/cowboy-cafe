@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author:  Kyler Gish
+ * Class name: DakotaDoubleBurger.cs
+ * Purpose: A class representing the Dakota Double Burger entree
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* Author: Nathaniel Bean
+ * Edited by: Kyler Gish
+ * Class name: Side.cs
+ * Purpose: A base class representing a side
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

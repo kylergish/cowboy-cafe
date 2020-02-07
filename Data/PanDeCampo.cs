@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: PanDeCampo.cs
+ * Purpose: A class representing the Pan De Campo side
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

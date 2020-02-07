@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: CornDodgers.cs
+ * Purpose: A class representing the Corn Dodgers side
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: ChiliCheeseFries.cs
+ * Purpose: A class representing the Chili Cheese Fries side
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

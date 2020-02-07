@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: TrailBurger.cs
+ * Purpose: A class representing the Trail Burger entree
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

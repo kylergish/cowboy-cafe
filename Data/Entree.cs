@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: Entree.cs
+ * Purpose: A base class representing an entree
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

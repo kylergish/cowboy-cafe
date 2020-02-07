@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* Author: Nathaniel Bean
+ * Edited by: Kyler Gish
+ * Class name: Size.cs
+ * Purpose: An enum containing the sizes available
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 
