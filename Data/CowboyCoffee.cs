@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: CowboyCoffee.cs
+ * Purpose: A class representing the Cowboy Coffe drink
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

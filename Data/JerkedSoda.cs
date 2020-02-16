@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: JerkedSoda.cs
+ * Purpose: A class representing the Jerked Soda drink
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 

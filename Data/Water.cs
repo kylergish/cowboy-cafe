@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: Water.cs
+ * Purpose: A class representing the Water drink
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 
