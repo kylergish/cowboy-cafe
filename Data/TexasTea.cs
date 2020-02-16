@@ -50,17 +50,35 @@ namespace CowboyCafe.Data
         {
             get
             {
-                switch (Size)
+                if(Sweet)
                 {
-                    case Size.Large:
-                        return 36;
-                    case Size.Medium:
-                        return 22;
-                    case Size.Small:
-                        return 10;
-                    default:
-                        throw new NotImplementedException("Unknown size");
+                    switch (Size)
+                    {
+                        case Size.Large:
+                            return 36;
+                        case Size.Medium:
+                            return 22;
+                        case Size.Small:
+                            return 10;
+                        default:
+                            throw new NotImplementedException("Unknown size");
+                    }
                 }
+                else
+                {
+                    switch (Size)
+                    {
+                        case Size.Large:
+                            return 18;
+                        case Size.Medium:
+                            return 11;
+                        case Size.Small:
+                            return 5;
+                        default:
+                            throw new NotImplementedException("Unknown size");
+                    }
+                }
+                
             }
         }
 
@@ -94,7 +112,8 @@ namespace CowboyCafe.Data
             {
                 var instructions = new List<string>();
 
-                if (!Ice) instructions.Add("hold ice");
+                if (Lemon) instructions.Add("Add Lemon");
+                if (!Ice) instructions.Add("Hold Ice");
 
                 return instructions;
             }

@@ -94,8 +94,8 @@ namespace CowboyCafe.Data
             {
                 var instructions = new List<string>();
 
-                if (Ice) instructions.Add("add ice");
-                if (RoomForCream) instructions.Add("room for cream");
+                if (Ice) instructions.Add("Add Ice");
+                if (RoomForCream) instructions.Add("Room for Cream");
 
                 return instructions;
             }
