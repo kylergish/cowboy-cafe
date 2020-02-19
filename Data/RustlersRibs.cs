@@ -34,6 +34,10 @@ namespace CowboyCafe.Data
                 return 894;
             }
         }
+
+        /// <summary>
+        /// The Special Instructions of the ribs
+        /// </summary>
         public override List<string> SpecialInstructions
         {
             get
@@ -42,6 +46,15 @@ namespace CowboyCafe.Data
 
                 return instructions;
             }
+        }
+
+        /// <summary>
+        /// Returns the string representation of the entree
+        /// </summary>
+        /// <returns>The string representation of the entree</returns>
+        public override string ToString()
+        {
+            return "Rustler's Ribs";
         }
     }
 }
