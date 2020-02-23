@@ -90,5 +90,24 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+
+        /// <summary>
+        /// Returns the string representation of the drink
+        /// </summary>
+        /// <returns>The string representation of the drink</returns>
+        public override string ToString()
+        {
+            switch (Size)
+            {
+                case Size.Large:
+                    return "Large Water";
+                case Size.Medium:
+                    return "Medium Water";
+                case Size.Small:
+                    return "Small Water";
+                default:
+                    throw new NotImplementedException("Unknown size");
+            }
+        }
     }
 }

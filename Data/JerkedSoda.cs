@@ -84,5 +84,24 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+
+        /// <summary>
+        /// Returns the string representation of the drink
+        /// </summary>
+        /// <returns>The string representation of the drink</returns>
+        public override string ToString()
+        {
+            switch (Size)
+            {
+                case Size.Large:
+                    return $"Large {Flavor} Jerked Soda";
+                case Size.Medium:
+                    return $"Medium {Flavor} Jerked Soda";
+                case Size.Small:
+                    return $"Small {Flavor} Jerked Soda";
+                default:
+                    throw new NotImplementedException("Unknown size");
+            }
+        }
     }
 }

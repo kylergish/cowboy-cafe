@@ -54,5 +54,24 @@ namespace CowboyCafe.Data
                 }
             }
         }
+
+        /// <summary>
+        /// Returns the string representation of the side
+        /// </summary>
+        /// <returns>The string representation of the side</returns>
+        public override string ToString()
+        {
+            switch (Size)
+            {
+                case Size.Large:
+                    return "Large Corn Dodgers";
+                case Size.Medium:
+                    return "Medium Corn Dodgers";
+                case Size.Small:
+                    return "Small Corn Dodgers";
+                default:
+                    throw new NotImplementedException("Unknown size");
+            }
+        }
     }
 }

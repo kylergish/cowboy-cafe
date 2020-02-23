@@ -100,5 +100,41 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+
+        /// <summary>
+        /// Returns the string representation of the drink
+        /// </summary>
+        /// <returns>The string representation of the drink</returns>
+        public override string ToString()
+        {
+            if (Decaf)
+            {
+                switch (Size)
+                {
+                    case Size.Large:
+                        return "Large Decaf Cowboy Coffee";
+                    case Size.Medium:
+                        return "Medium Decaf Cowboy Coffee";
+                    case Size.Small:
+                        return "Small Decaf Cowboy Coffee";
+                    default:
+                        throw new NotImplementedException("Unknown size");
+                }
+            }
+            else
+            {
+                switch (Size)
+                {
+                    case Size.Large:
+                        return "Large Cowboy Coffee";
+                    case Size.Medium:
+                        return "Medium Cowboy Coffee";
+                    case Size.Small:
+                        return "Small Cowboy Coffee";
+                    default:
+                        throw new NotImplementedException("Unknown size");
+                }
+            }
+        }
     }
 }
