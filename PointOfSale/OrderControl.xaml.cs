@@ -34,6 +34,11 @@ namespace PointOfSale
             AddCornDodgersButton.Click += AddCornDodgersButton_Click;
             AddPanDeCampoButton.Click += AddPanDeCampoButton_Click;
             AddBakedBeansButton.Click += AddBakedBeansButton_Click;
+
+            AddJerkedSodaButton.Click += AddJerkedSodaButton_Click;
+            AddTexasTeaButton.Click += AddTexasTeaButton_Click;
+            AddCowboyCoffeeButton.Click += AddCowboyCoffeeButton_Click;
+            AddWater.Click += AddWaterButton_Click;
         }
 
         private void AddCowpokeChiliButton_Click(object sender, RoutedEventArgs e)
@@ -90,6 +95,26 @@ namespace PointOfSale
         private void AddBakedBeansButton_Click(object sender, RoutedEventArgs e)
         {
             OrderList.Items.Add(new BakedBeans());
+        }
+
+        private void AddJerkedSodaButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new JerkedSoda());
+        }
+
+        private void AddTexasTeaButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new TexasTea());
+        }
+
+        private void AddCowboyCoffeeButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new CowboyCoffee());
+        }
+
+        private void AddWaterButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderList.Items.Add(new Water());
         }
     }
 }
