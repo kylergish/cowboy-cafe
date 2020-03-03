@@ -76,7 +76,7 @@ namespace CowboyCafe.DataTests
         }
 
         [Theory]
-        [InlineData("Price")]
+        [InlineData("Subtotal")]
         [InlineData("Items")]
         public void AddingAnItemShouldTriggerPropertyChanged(string propertyName)
         {
@@ -89,7 +89,7 @@ namespace CowboyCafe.DataTests
         }
 
         [Theory]
-        [InlineData("Price")]
+        [InlineData("Subtotal")]
         [InlineData("Items")]
         public void RemovingAnItemShouldTriggerPropertyChanged(string propertyName)
         {
