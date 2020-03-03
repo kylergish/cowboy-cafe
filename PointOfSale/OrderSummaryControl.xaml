@@ -35,7 +35,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock VerticalAlignment="Center">Order #</TextBlock>
+        <TextBlock VerticalAlignment="Top">Order #</TextBlock>
         <TextBlock Grid.Row="2" VerticalAlignment="Center">Subtotal</TextBlock>
         <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Path=Subtotal, StringFormat=c}"/>
     </Grid>
