@@ -32,7 +32,7 @@ namespace PointOfSale
 
         private void AddItemSelectionButton_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Container.Child = new MenuItemSelectionControl();
         }
 
         private void AddCancelItemButton_Click(object sender, RoutedEventArgs e)
@@ -43,6 +43,11 @@ namespace PointOfSale
         private void AddCompleteOrderButton_Click(object sender, RoutedEventArgs e)
         {
             this.DataContext = new Order();
+        }
+
+        public void SwapScreen(FrameworkElement element)
+        {
+            Container.Child = element;
         }
     }
 }
