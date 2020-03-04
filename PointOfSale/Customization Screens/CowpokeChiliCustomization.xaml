@@ -12,5 +12,17 @@
             <CheckBox IsChecked="{Binding Path=Cheese}"/>
             <TextBlock Text="Cheese"/>
         </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <CheckBox IsChecked="{Binding Path=SourCream}"/>
+            <TextBlock Text="Sour Cream"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <CheckBox IsChecked="{Binding Path=GreenOnions}"/>
+            <TextBlock Text="Green Onions"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <CheckBox IsChecked="{Binding Path=TortillaStrips}"/>
+            <TextBlock Text="Tortilla Strips"/>
+        </StackPanel>
     </StackPanel>
 </UserControl>

@@ -27,11 +27,12 @@ namespace PointOfSale
             AddCowpokeChiliButton.Click += AddCowpokeChiliButton_Click;
             AddRustlersRibsButton.Click += AddRustlersRibsButton_Click;
             AddPecosPulledPorkButton.Click += AddPecosPulledPorkButton_Click;
+            /*
             AddTrailBurgerButton.Click += AddTrailBurgerButton_Click;
             AddDakotaDoubleBurgerButton.Click += AddDakotaDoubleBurgerButton_Click;
             AddTexasTripleBurgerButton.Click += AddTexasTripleBurgerButton_Click;
             AddAngryChickenButton.Click += AddAngryChickenButton_Click;
-
+            */
             AddChiliCheeseButton.Click += AddChiliCheeseButton_Click;
             AddCornDodgersButton.Click += AddCornDodgersButton_Click;
             AddPanDeCampoButton.Click += AddPanDeCampoButton_Click;
@@ -64,51 +65,85 @@ namespace PointOfSale
             var orderControl = this.FindAncestor<OrderControl>();
             if (DataContext is Order order)
             {
-                order.Add(new RustlersRibs());
-                orderControl.SwapScreen(new CowpokeChiliCustomization());
+                var item = new RustlersRibs();
+                var screen = new RustlersRibsCustomization();
+                screen.DataContext = item;
+                order.Add(item);
+                orderControl?.SwapScreen(screen);
+
             }
         }
 
         private void AddPecosPulledPorkButton_Click(object sender, RoutedEventArgs e)
         {
+            var orderControl = this.FindAncestor<OrderControl>();
             if (DataContext is Order order)
             {
-                order.Add(new PecosPulledPork());
+                var item = new PecosPulledPork();
+                var screen = new PecosPulledPorkCustomization();
+                screen.DataContext = item;
+                order.Add(item);
+                orderControl?.SwapScreen(screen);
+
             }
         }
-
+        /*
         private void AddTrailBurgerButton_Click(object sender, RoutedEventArgs e)
         {
+            var orderControl = this.FindAncestor<OrderControl>();
             if (DataContext is Order order)
             {
-                order.Add(new TrailBurger());
+                var item = new TrailBurger();
+                var screen = new TrailBurgerCustomization();
+                screen.DataContext = item;
+                order.Add(item);
+                orderControl?.SwapScreen(screen);
+
             }
         }
 
         private void AddDakotaDoubleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
+            var orderControl = this.FindAncestor<OrderControl>();
             if (DataContext is Order order)
             {
-                order.Add(new DakotaDoubleBurger());
+                var item = new DakotaDoubleBurger();
+                var screen = new DakotaDoubleBurgerCustomization();
+                screen.DataContext = item;
+                order.Add(item);
+                orderControl?.SwapScreen(screen);
+
             }
         }
 
         private void AddTexasTripleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
+            var orderControl = this.FindAncestor<OrderControl>();
             if (DataContext is Order order)
             {
-                order.Add(new TexasTripleBurger());
+                var item = new TexasTripleBurger();
+                var screen = new TexasTripleBurgerCustomization();
+                screen.DataContext = item;
+                order.Add(item);
+                orderControl?.SwapScreen(screen);
+
             }
         }
 
         private void AddAngryChickenButton_Click(object sender, RoutedEventArgs e)
         {
+            var orderControl = this.FindAncestor<OrderControl>();
             if (DataContext is Order order)
             {
-                order.Add(new AngryChicken());
+                var item = new AngryChicken();
+                var screen = new AngryChickenCustomization();
+                screen.DataContext = item;
+                order.Add(item);
+                orderControl?.SwapScreen(screen);
+
             }
         }
-
+        */
 
         private void AddChiliCheeseButton_Click(object sender, RoutedEventArgs e)
         {
