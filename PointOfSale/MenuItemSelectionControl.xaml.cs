@@ -27,12 +27,11 @@ namespace PointOfSale
             AddCowpokeChiliButton.Click += AddCowpokeChiliButton_Click;
             AddRustlersRibsButton.Click += AddRustlersRibsButton_Click;
             AddPecosPulledPorkButton.Click += AddPecosPulledPorkButton_Click;
-            /*
             AddTrailBurgerButton.Click += AddTrailBurgerButton_Click;
             AddDakotaDoubleBurgerButton.Click += AddDakotaDoubleBurgerButton_Click;
             AddTexasTripleBurgerButton.Click += AddTexasTripleBurgerButton_Click;
             AddAngryChickenButton.Click += AddAngryChickenButton_Click;
-            */
+            
             AddChiliCheeseButton.Click += AddChiliCheeseButton_Click;
             AddCornDodgersButton.Click += AddCornDodgersButton_Click;
             AddPanDeCampoButton.Click += AddPanDeCampoButton_Click;
@@ -87,7 +86,7 @@ namespace PointOfSale
 
             }
         }
-        /*
+        
         private void AddTrailBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -101,7 +100,7 @@ namespace PointOfSale
 
             }
         }
-
+        
         private void AddDakotaDoubleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -115,7 +114,7 @@ namespace PointOfSale
 
             }
         }
-
+        
         private void AddTexasTripleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -129,7 +128,7 @@ namespace PointOfSale
 
             }
         }
-
+        
         private void AddAngryChickenButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -143,7 +142,6 @@ namespace PointOfSale
 
             }
         }
-        */
 
         private void AddChiliCheeseButton_Click(object sender, RoutedEventArgs e)
         {
