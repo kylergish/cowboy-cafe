@@ -156,7 +156,7 @@ namespace PointOfSale
 
             }
         }
-
+        /*
         private void AddCornDodgersButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -198,7 +198,7 @@ namespace PointOfSale
 
             }
         }
-
+        */
         private void AddJerkedSodaButton_Click(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order order)
