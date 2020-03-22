@@ -29,9 +29,36 @@ namespace CowboyCafe.DataTests
         }
 
         // Test 3: Changing the "Bread" property should invoke PropertyChanged for "SpecialInstructions"
+        [Fact]
+        public void ChangingBreadShouldInvokePropertyChangedForSpecialInstructions()
+        {
+            var chicken = new AngryChicken();
+            Assert.PropertyChanged(chicken, "SpecialInstructions", () =>
+            {
+                chicken.Bread = false;
+            });
+        }
 
         // Test 4: Changing the "Pickle" property should invoke PropertyChanged for "Pickle"
+        [Fact]
+        public void ChangingPickleShouldInvokePropertyChangedForPickle()
+        {
+            var chicken = new AngryChicken();
+            Assert.PropertyChanged(chicken, "Pickle", () =>
+            {
+                chicken.Pickle = false;
+            });
+        }
 
         // Test 5: Changing the "Pickle" property should invoke PropertyChanged for "SpecialInstructions"
+        [Fact]
+        public void ChangingPickleShouldInvokePropertyChangedForSpecialInstructions()
+        {
+            var chicken = new AngryChicken();
+            Assert.PropertyChanged(chicken, "SpecialInstructions", () =>
+            {
+                chicken.Pickle = false;
+            });
+        }
     }
 }
