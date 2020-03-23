@@ -20,5 +20,11 @@
             <CheckBox IsChecked="{Binding Path=Ice}"/>
             <TextBlock Text="Ice"/>
         </StackPanel>
+        <TextBlock>Size</TextBlock>
+        <StackPanel>
+            <RadioButton GroupName="Size" Name="Small">Small</RadioButton>
+            <RadioButton GroupName="Size" Name="Medium">Medium</RadioButton>
+            <RadioButton GroupName="Size" Name="Large">Large</RadioButton>
+        </StackPanel>
     </StackPanel>
 </UserControl>
