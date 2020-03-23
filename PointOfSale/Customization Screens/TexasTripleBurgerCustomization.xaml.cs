@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: TexasTripleBurgerCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of texas triple burger
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +22,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class TexasTripleBurgerCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for TexasTripleBurgerCustomization
+        /// </summary>
         public TexasTripleBurgerCustomization()
         {
             InitializeComponent();

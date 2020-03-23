@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: AngryChickenCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of angry chicken
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +22,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class AngryChickenCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for AngryChickenCustomization
+        /// </summary>
         public AngryChickenCustomization()
         {
             InitializeComponent();

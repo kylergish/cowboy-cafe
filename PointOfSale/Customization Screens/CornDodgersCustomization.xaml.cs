@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: CornDodgersCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of corn dodgers
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +24,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class CornDodgersCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for CornDodgersCustomization
+        /// </summary>
         public CornDodgersCustomization()
         {
             InitializeComponent();

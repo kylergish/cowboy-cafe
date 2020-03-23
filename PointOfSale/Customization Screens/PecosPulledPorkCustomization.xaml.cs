@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: PecosPulledPorkCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of pecos pulled pork
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +22,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class PecosPulledPorkCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for PecosPulledPorkCustomization
+        /// </summary>
         public PecosPulledPorkCustomization()
         {
             InitializeComponent();

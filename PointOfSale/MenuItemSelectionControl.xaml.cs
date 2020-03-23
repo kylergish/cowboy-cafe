@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: MenuItemSelectionControl.xaml.cs
+ * Purpose: A xaml class representing the menu items and their selection controls
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +25,9 @@ namespace PointOfSale
     /// </summary>
     public partial class MenuItemSelectionControl : UserControl
     {
+        /// <summary>
+        /// Constructor for MenuItemSelectionControl
+        /// </summary>
         public MenuItemSelectionControl()
         {
             InitializeComponent();
@@ -43,8 +50,16 @@ namespace PointOfSale
             AddWater.Click += AddWaterButton_Click;
         }
 
+        /// <summary>
+        /// New Order
+        /// </summary>
         public Order order = new Order();
 
+        /// <summary>
+        /// Event for clicking the cowpoke chili button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddCowpokeChiliButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -58,6 +73,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the rustlers ribs button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddRustlersRibsButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -71,6 +91,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the pecos pulled pork button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddPecosPulledPorkButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -83,7 +108,12 @@ namespace PointOfSale
                 orderControl?.SwapScreen(screen);
             }
         }
-        
+
+        /// <summary>
+        /// Event for clicking the trail burger button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddTrailBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -96,7 +126,12 @@ namespace PointOfSale
                 orderControl?.SwapScreen(screen);
             }
         }
-        
+
+        /// <summary>
+        /// Event for clicking the dakota double burger button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddDakotaDoubleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -109,7 +144,12 @@ namespace PointOfSale
                 orderControl?.SwapScreen(screen);
             }
         }
-        
+
+        /// <summary>
+        /// Event for clicking the texas triple burger button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddTexasTripleBurgerButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -122,7 +162,12 @@ namespace PointOfSale
                 orderControl?.SwapScreen(screen);
             }
         }
-        
+
+        /// <summary>
+        /// Event for clicking the angry chicken button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddAngryChickenButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -136,6 +181,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the chili cheese fries button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddChiliCheeseButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -148,7 +198,12 @@ namespace PointOfSale
                 orderControl?.SwapScreen(screen);
             }
         }
-        
+
+        /// <summary>
+        /// Event for clicking the corn dodgers button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddCornDodgersButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -162,6 +217,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the pan de campo button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddPanDeCampoButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -175,6 +235,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the baked beans button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddBakedBeansButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -187,7 +252,12 @@ namespace PointOfSale
                 orderControl?.SwapScreen(screen);
             }
         }
-        
+
+        /// <summary>
+        /// Event for clicking the jerked soda button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddJerkedSodaButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -201,6 +271,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the texas tea button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddTexasTeaButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -214,6 +289,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the cowboy coffee button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddCowboyCoffeeButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();
@@ -227,6 +307,11 @@ namespace PointOfSale
             }
         }
 
+        /// <summary>
+        /// Event for clicking the water button
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void AddWaterButton_Click(object sender, RoutedEventArgs e)
         {
             var orderControl = this.FindAncestor<OrderControl>();

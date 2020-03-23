@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: CowpokeChiliCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of cowpoke chili
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +22,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class CowpokeChiliCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for CowpokeChiliCustomization
+        /// </summary>
         public CowpokeChiliCustomization()
         {
             InitializeComponent();

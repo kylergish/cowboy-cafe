@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: OrderSummaryControl.xaml.cs
+ * Purpose: A xaml class representing the order summary control
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +22,9 @@ namespace PointOfSale
     /// </summary>
     public partial class OrderSummaryControl : UserControl
     {
+        /// <summary>
+        /// Constructor for OrderSummaryControl
+        /// </summary>
         public OrderSummaryControl()
         {
             InitializeComponent();

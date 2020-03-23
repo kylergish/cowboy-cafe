@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: ChiliCheeseFriesCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of chili cheese fries
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +24,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class ChiliCheeseFriesCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for ChiliCheeseFriesCustomization
+        /// </summary>
         public ChiliCheeseFriesCustomization()
         {
             InitializeComponent();

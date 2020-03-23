@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: RustlersRibsCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of rustlers ribs
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +22,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class RustlersRibsCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for RustlersRibsCustomization
+        /// </summary>
         public RustlersRibsCustomization()
         {
             InitializeComponent();

@@ -14,6 +14,9 @@ namespace CowboyCafe.Data
     /// </summary>
     public class Order : INotifyPropertyChanged
     {
+        /// <summary>
+        /// The previous order item
+        /// </summary>
         static private uint lastOrderNumber = 1;
 
         private List<IOrderItem> items = new List<IOrderItem>();
@@ -46,7 +49,8 @@ namespace CowboyCafe.Data
         {
             items.Add(item);
             //take this if out when finished implimenting
-            if (item is INotifyPropertyChanged pcitem) {
+            if (item is INotifyPropertyChanged pcitem)
+            {
                 pcitem.PropertyChanged += OnItemChanged;
             }
             subtotal += item.Price;
@@ -62,7 +66,7 @@ namespace CowboyCafe.Data
         public void Remove(IOrderItem item)
         {
             items.Remove(item);
-            if (item is INotifyPropertyChanged pcitem)
+            if(item is INotifyPropertyChanged pcitem)
             {
                 pcitem.PropertyChanged -= OnItemChanged;
             }
@@ -71,6 +75,11 @@ namespace CowboyCafe.Data
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Subtotal"));
         }
 
+        /// <summary>
+        /// Changes the properties when the item is changed
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
         private void OnItemChanged(object sender, PropertyChangedEventArgs e)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Items"));

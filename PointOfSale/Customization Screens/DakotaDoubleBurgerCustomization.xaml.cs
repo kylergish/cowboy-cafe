@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: DakotaDoubleBurgerCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of dakota double burger
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +22,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class DakotaDoubleBurgerCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for DakotaDoubleBurgerCustomization
+        /// </summary>
         public DakotaDoubleBurgerCustomization()
         {
             InitializeComponent();

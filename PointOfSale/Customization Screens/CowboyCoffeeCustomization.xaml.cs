@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: CowboyCoffeeCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of cowboy coffee
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +24,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class CowboyCoffeeCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for CowboyCoffeeCustomization
+        /// </summary>
         public CowboyCoffeeCustomization()
         {
             InitializeComponent();

@@ -1,6 +1,6 @@
 ﻿/* Author: Kyler Gish
  * Class name: CowboyCoffee.cs
- * Purpose: A class representing the Cowboy Coffe drink
+ * Purpose: A class representing the Cowboy Coffee drink
  */
 using System;
 using System.Collections.Generic;

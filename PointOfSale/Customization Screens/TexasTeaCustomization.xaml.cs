@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: TexasTeaCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of texas tea
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +24,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class TexasTeaCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for TexasTeaCustomization
+        /// </summary>
         public TexasTeaCustomization()
         {
             InitializeComponent();

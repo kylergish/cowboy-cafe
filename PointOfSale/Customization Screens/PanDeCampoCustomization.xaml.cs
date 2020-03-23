@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Author: Kyler Gish
+ * Class name: PanDeCampoCustomization.xaml.cs
+ * Purpose: A xaml class representing the customization of pan de campo
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +25,9 @@ namespace PointOfSale.Customization_Screens
     /// </summary>
     public partial class PanDeCampoCustomization : UserControl
     {
+        /// <summary>
+        /// Constructor for PanDeCampoCustomization
+        /// </summary>
         public PanDeCampoCustomization()
         {
             InitializeComponent();
