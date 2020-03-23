@@ -16,11 +16,11 @@ using Size = CowboyCafe.Data.Size;
 namespace PointOfSale.Customization_Screens
 {
     /// <summary>
-    /// Interaction logic for ChiliCheeseFriesCustomization.xaml
+    /// Interaction logic for BakedBeansCustomization.xaml
     /// </summary>
-    public partial class ChiliCheeseFriesCustomization : UserControl
+    public partial class BakedBeansCustomization : UserControl
     {
-        public ChiliCheeseFriesCustomization()
+        public BakedBeansCustomization()
         {
             InitializeComponent();
 
@@ -36,9 +36,9 @@ namespace PointOfSale.Customization_Screens
         /// <param name="arg">argument</param>
         private void SizeSmall_Checked(object sender, RoutedEventArgs arg)
         {
-            if (DataContext is ChiliCheeseFries fry)
+            if (DataContext is BakedBeans beans)
             {
-                fry.Size = Size.Small;
+                beans.Size = Size.Small;
             }
         }
 
@@ -49,9 +49,9 @@ namespace PointOfSale.Customization_Screens
         /// <param name="arg">argument</param>
         private void SizeMedium_Checked(object sender, RoutedEventArgs arg)
         {
-            if (DataContext is ChiliCheeseFries fry)
+            if (DataContext is BakedBeans beans)
             {
-                fry.Size = Size.Medium;
+                beans.Size = Size.Medium;
             }
         }
 
@@ -62,9 +62,9 @@ namespace PointOfSale.Customization_Screens
         /// <param name="arg">argument</param>
         private void SizeLarge_Checked(object sender, RoutedEventArgs arg)
         {
-            if (DataContext is ChiliCheeseFries fry)
+            if (DataContext is BakedBeans beans)
             {
-                fry.Size = Size.Large;
+                beans.Size = Size.Large;
             }
         }
     }

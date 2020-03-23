@@ -13,14 +13,15 @@ using System.Windows.Shapes;
 using CowboyCafe.Data;
 using Size = CowboyCafe.Data.Size;
 
+
 namespace PointOfSale.Customization_Screens
 {
     /// <summary>
-    /// Interaction logic for ChiliCheeseFriesCustomization.xaml
+    /// Interaction logic for PanDeCampoCustomization.xaml
     /// </summary>
-    public partial class ChiliCheeseFriesCustomization : UserControl
+    public partial class PanDeCampoCustomization : UserControl
     {
-        public ChiliCheeseFriesCustomization()
+        public PanDeCampoCustomization()
         {
             InitializeComponent();
 
@@ -36,9 +37,9 @@ namespace PointOfSale.Customization_Screens
         /// <param name="arg">argument</param>
         private void SizeSmall_Checked(object sender, RoutedEventArgs arg)
         {
-            if (DataContext is ChiliCheeseFries fry)
+            if (DataContext is PanDeCampo pan)
             {
-                fry.Size = Size.Small;
+                pan.Size = Size.Small;
             }
         }
 
@@ -49,9 +50,9 @@ namespace PointOfSale.Customization_Screens
         /// <param name="arg">argument</param>
         private void SizeMedium_Checked(object sender, RoutedEventArgs arg)
         {
-            if (DataContext is ChiliCheeseFries fry)
+            if (DataContext is PanDeCampo pan)
             {
-                fry.Size = Size.Medium;
+                pan.Size = Size.Medium;
             }
         }
 
@@ -62,9 +63,9 @@ namespace PointOfSale.Customization_Screens
         /// <param name="arg">argument</param>
         private void SizeLarge_Checked(object sender, RoutedEventArgs arg)
         {
-            if (DataContext is ChiliCheeseFries fry)
+            if (DataContext is PanDeCampo pan)
             {
-                fry.Size = Size.Large;
+                pan.Size = Size.Large;
             }
         }
     }

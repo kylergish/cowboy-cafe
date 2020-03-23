@@ -5,14 +5,20 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel;
 
 namespace CowboyCafe.Data
 {
     /// <summary>
     /// A class representing the Cowboy Coffee drink
     /// </summary>
-    public class CowboyCoffee : Drink
+    public class CowboyCoffee : Drink, INotifyPropertyChanged
     {
+        /// <summary>
+        /// The property changed event
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
         private bool decaf = false;
         /// <summary>
         /// If the drink is decaf
@@ -20,7 +26,12 @@ namespace CowboyCafe.Data
         public bool Decaf
         {
             get { return decaf; }
-            set { decaf = value; }
+            set 
+            { 
+                decaf = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Decaf"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+            }
         }
 
         private bool roomForCream = false;
@@ -30,7 +41,12 @@ namespace CowboyCafe.Data
         public bool RoomForCream
         {
             get { return roomForCream; }
-            set { roomForCream = value; }
+            set 
+            { 
+                roomForCream = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RoomForCream"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+            }
         }
 
         private bool ice = false;
@@ -40,7 +56,12 @@ namespace CowboyCafe.Data
         public override bool Ice
         {
             get { return ice; }
-            set { ice = value; }
+            set 
+            { 
+                ice = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Ice"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+            }
         }
 
         /// <summary>
@@ -94,6 +115,7 @@ namespace CowboyCafe.Data
             {
                 var instructions = new List<string>();
 
+                if (Decaf) instructions.Add("Decaf");
                 if (Ice) instructions.Add("Add Ice");
                 if (RoomForCream) instructions.Add("Room for Cream");
 
