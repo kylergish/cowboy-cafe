@@ -20,6 +20,11 @@ namespace CowboyCafe.Data
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// The original name
+        /// </summary>
+        public abstract string Name { get; }
+
         private Size size;
         /// <summary>
         /// Gets the size of the side

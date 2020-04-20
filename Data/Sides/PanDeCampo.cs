@@ -14,6 +14,11 @@ namespace CowboyCafe.Data
     public class PanDeCampo : Side
     {
         /// <summary>
+        /// The original name
+        /// </summary>
+        public override string Name => "Pan De Campo";
+
+        /// <summary>
         /// The calories of the side
         /// </summary>
         public override uint Calories

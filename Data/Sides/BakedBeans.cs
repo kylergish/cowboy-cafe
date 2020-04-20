@@ -14,6 +14,11 @@ namespace CowboyCafe.Data
     public class BakedBeans : Side
     {
         /// <summary>
+        /// The original name
+        /// </summary>
+        public override string Name => "Baked Beans";
+
+        /// <summary>
         /// The calories of the side
         /// </summary>
         public override uint Calories

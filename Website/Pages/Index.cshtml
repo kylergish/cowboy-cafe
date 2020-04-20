@@ -1,0 +1,70 @@
+﻿@page
+@using CowboyCafe.Data;
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>Cowboy Cafe</h1>
+<p>
+    We at Cowboy Cafe are proud to bring you authentic trail meals from the American West.
+    Shake off the dust on your boots and sake your thirst with one of our old-fashioned hand-jerked sodas.
+    Dip your Pan de Campo into a bowl of beans.
+    Or conquer the the mighty Texas Triple Burger!
+    You’ve had a hard ride - so take it easy with us.
+</p>
+
+<h2>Entrees</h2>
+<ul>
+    @foreach (Entree item in Menu.Entrees())
+    {
+        <li>
+            <div class="menu-item">
+                <h3>@item</h3>
+                <h5>Price: $@(string.Format("{0:#.00}", item.Price))</h5>
+                <h5>Calories: @item.Calories</h5>
+            </div>
+        </li>
+    }
+</ul>
+
+<h2>Sides</h2>
+<ul>
+    @foreach(Side item in Menu.Sides())
+    {
+        <li>
+            <div class="menu-item">
+                <h3>@item.Name</h3>
+                <h5>Small Price: $@(string.Format("{0:#.00}", item.Price))</h5>
+                <h5>Calories: @item.Calories</h5>
+                <h5>@(item.Size = Size.Medium) Price: $@(string.Format("{0:#.00}", item.Price))</h5>
+                <h5>Calories: @item.Calories</h5>
+                <h5>@(item.Size = Size.Large) Price: $@(string.Format("{0:#.00}", item.Price))</h5>
+                <h5>Calories: @item.Calories</h5>
+            </div>
+        </li>
+    }
+</ul>
+
+<h2>Drinks</h2>
+<ul>
+    @foreach (Drink item in Menu.Drinks())
+    {
+        <li>
+            <div class="menu-item">
+                <h3>@item.Name</h3>
+                <h5>Small Price: $@(string.Format("{0:#.00}", item.Price))</h5>
+                <h5>Calories: @item.Calories</h5>
+                <h5>@(item.Size = Size.Medium) Price: $@(string.Format("{0:#.00}", item.Price))</h5>
+                <h5>Calories: @item.Calories</h5>
+                <h5>@(item.Size = Size.Large) Price: $@(string.Format("{0:#.00}", item.Price))</h5>
+                <h5>Calories: @item.Calories</h5>
+            </div>
+        </li>
+    }
+</ul>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

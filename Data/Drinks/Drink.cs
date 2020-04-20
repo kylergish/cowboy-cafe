@@ -15,6 +15,11 @@ namespace CowboyCafe.Data
     public abstract class Drink : IOrderItem
     {
         /// <summary>
+        /// The original name
+        /// </summary>
+        public abstract string Name { get; }
+
+        /// <summary>
         /// Gets the Size of the drink
         /// </summary>
         public virtual Size Size { get; set; } = Size.Small;

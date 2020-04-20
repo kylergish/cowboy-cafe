@@ -19,6 +19,11 @@ namespace CowboyCafe.Data
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// The original name
+        /// </summary>
+        public override string Name => "Water";
+
         private Size size;
         /// <summary>
         /// Gets the size of the drink
