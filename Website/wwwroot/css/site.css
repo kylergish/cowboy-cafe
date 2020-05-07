@@ -83,7 +83,7 @@ form#order-database {
 #search {
     grid-column-start: 1;
     grid-column-end: 3;
-    text-align: center;
+    text-align: left;
 }
 
 #filters {
@@ -96,5 +96,31 @@ form#order-database {
 }
 
 #filters h4 {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.52rem;
+}
+
+#results > div {
+    float: left;
+    width: 33%;
+}
+
+@media (max-width: 490px) {
+    #results {
+        flex-direction: column;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 490px) {
+    .flex-columns {
+        flex-direction: column;
+    }
 }

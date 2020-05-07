@@ -73,10 +73,38 @@ namespace Website.Pages
             OrderItemType = Request.Query["OrderItemType"];
             
             OrderItems = Menu.All;
-            OrderItems = Menu.Search(SearchTerms);
+            //OrderItems = Menu.Search(SearchTerms);
             OrderItems = Menu.FilterByOrderItemType(OrderItems, OrderItemType);
-            OrderItems = Menu.FilterByCalories(OrderItems, CalorieMin, CalorieMax);
-            OrderItems = Menu.FilterByPrice(OrderItems, PriceMin, PriceMax);
+            //OrderItems = Menu.FilterByCalories(OrderItems, CalorieMin, CalorieMax);
+            //OrderItems = Menu.FilterByPrice(OrderItems, PriceMin, PriceMax);
+
+            // Search Orders for Search Terms
+            if (SearchTerms != null)
+            {
+                OrderItems = OrderItems.Where(order => order.ToString() != null && order.ToString().Contains(SearchTerms, StringComparison.InvariantCultureIgnoreCase));
+            }
+
+            // FilterByOrderItemType
+            if (OrderItemType != null && OrderItemType.Length != 0)
+            {
+                //OrderItems = OrderItems.Where(order => order. != null && OrderItem.Contains(OrderItemType));
+            }
+
+            // FilterByCalories
+            if (CalorieMin != null && CalorieMax != null)
+            {
+                OrderItems = OrderItems.Where(order => order.Calories <= CalorieMax);
+                OrderItems = OrderItems.Where(order => order.Calories >= CalorieMin);
+                OrderItems = OrderItems.Where(order => order.Calories >= CalorieMin && order.Calories <= CalorieMax);
+            }
+
+            // FilterByPrice
+            if (PriceMin != null && PriceMax != null)
+            {
+                OrderItems = OrderItems.Where(order => order.Price <= PriceMax);
+                OrderItems = OrderItems.Where(order => order.Price >= PriceMin);
+                OrderItems = OrderItems.Where(order => order.Price >= PriceMin && order.Price <= PriceMax);
+            }
         }
     }
 }
